@@ -1,0 +1,648 @@
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+@font-face {
+    font-family: 'Sigustil';
+    src: url('fonts/Sigustil.woff2') format('woff2'),
+         url('fonts/Sigustil.off') format('off'),
+         url('fonts/Sigustil.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Six Caps';
+    src: url('fonts/SixCaps.woff2') format('woff2'),
+         url('fonts/SixCaps.woff') format('woff'),
+         url('fonts/SixCaps.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* =======> header <=========== */
+navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    padding: 20px ;
+    background-color: #1E1E1E;
+}
+
+navbar .logo img{
+    width: 100px;
+}
+
+navbar .tagline{
+    display: flex;
+    justify-items: center;
+    gap: 10px;
+}
+navbar .tagline p{
+   font-size: 23px;
+   font-weight: 300;
+}
+navbar .tagline img{
+    width: 30px;
+    height: 30px;
+}
+/*
+navbar .logo{
+    text-align: center;
+}
+navbar .logo h1{
+    letter-spacing: 3px;
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+navbar .logo p{
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+navbar .logo .circle{
+    border: 1.5px solid white;
+    position: absolute;
+    border-radius: 50%;
+    width: 18px;
+    margin-left: 69px;
+    height: 18px;
+}
+*/
+.header__section{
+    background-color: rgb(194, 194, 194);
+    padding: 30px 0px;
+    
+}
+.header__section .content__section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.header__section .title{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.header__section .title span{
+    color: #0D83F2;
+}
+
+
+.header__section .card{
+    max-width: 800px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 60px;
+    padding: 30px;
+    border-radius: 30px;
+}
+.header__section .card .card__image{
+    flex:1;
+    
+    border-right: 2px solid #F5F5F5;
+}
+.header__section .card .card__image .card__image__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.header__section .card .card__image .text__vertical{
+    font-weight: 900;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 85px;
+    color: #F5F5F5;
+    display: inline-block;
+    transform: rotate(90deg) scaleY(5);
+    text-orientation: upright;
+    margin-top: 100px;
+}
+.header__section .card .card__image img{
+    position: relative;
+    width: 75%;
+    height: 80%;
+    margin-top: -70px;
+
+}
+.header__section .card .card__image .card__image__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -45px;
+    
+}
+.header__section .card .card__image .time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    margin-top: 15px;
+}
+.header__section .card .card__image .time div{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+}
+.header__section .card .card__image .time h1{
+    color: white;
+    font-size: 28px;
+}
+.header__section .card .card__image .time p{
+    color: white;
+    font-size: 9px;
+}
+.header__section .card .card__image span{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.header__section .card .card__content{
+    flex:1;
+    padding-top: 10px;
+}
+.header__section .card .card__content p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.header__section .card .card__content p span{
+    color: #0D83F2;
+}
+.header__section .card .card__content form{
+    margin-top: 20px;
+    background-color: #046DCF;
+    padding: 15px;
+    border-radius: 15px;
+}
+.header__section .card .card__content form h1{
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+.header__section .card .card__content form p{
+    margin-top: 10px;
+    font-size: 12px;
+    color: white;
+}
+.header__section .card .card__content form input{
+    background-color: #F6F6F6;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    margin-top: 0.25rem; 
+    border-radius: 0.25rem; 
+    border-width: 2px; 
+    width: 100%; 
+    height: 2.5rem; 
+}
+.header__section .card .card__content form button{
+    width: 100%;
+    cursor: pointer;
+    background-color: #F6CF00;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+.header__section .card .card__content form .text__buttom{
+    align-items: center;
+    text-align: center;
+}
+.header__section .card .card__content form span{
+    font-size: 6px;
+    font-weight: 600;
+    color: white;
+}
+/* =======> stats <=========== */
+
+.stats{
+    background-color: #1E1E1E;
+    padding: 40px 0;
+}
+.stats .stats__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+.stats .stats__content div{
+    max-width: 17%;
+}
+.stats .stats__content h1{
+    color: #0D83F2;
+    font-size: 34px;
+}
+.stats .stats__content p{
+    color: white;
+}
+/*===========> first banner <================*/
+.first__banner {
+    background-color: #046DCF;
+   
+
+}
+.first__banner .banner__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 35px;
+}
+.first__banner .banner__content h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+.first__banner .banner__content .group__card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+.first__banner .banner__content .card{
+        max-width: 680px;
+        padding: 12px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0.8em;
+        border-radius: 10px;
+}
+.first__banner .banner__content  .card__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #046DCF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.first__banner .banner__content  .card__image img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+.first__banner .banner__content .card__text p {
+    font-size: 14px;
+}
+.first__banner .banner__content button{
+    cursor: pointer;
+    background-color: #F6CF00;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.first__banner .banner__content span{
+    margin-top: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.first__banner .banner__content .time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    margin-top: 15px;
+}
+.first__banner .banner__content .time div{
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+}
+.first__banner .banner__content .time h1{
+    color: #F6CF00;
+    font-size: 44px;
+}
+.first__banner .banner__content .time p{
+    color: white;
+    font-size: 12px;
+}
+/* =======> second Banner <======*/  
+.second__banner{
+    background-color: #EFEFEF;
+}
+.second__banner .banner__content{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    position: relative;
+    top: 80px;
+}
+.second__banner .content__image img{
+    width: 450px;
+    height: 550px;
+}
+.second__banner .content__text{
+    margin-top: 40px;
+}
+.second__banner .content__text h2{
+    font-size: 45px;
+    border: #1E1E1E;
+    font-weight: 600;
+    color: #0D83F2;
+}
+.second__banner .content__text p{
+    margin-top: 10px;
+    font-size: 28px;
+}
+.second__banner .content__text p span{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.second__banner .content__text button{
+    cursor: pointer;
+    background-color: #046DCF;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* =======> third Section <======= */
+
+.third__section .banner__content{
+    max-width: 70%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+.third__section .banner__content .content__left h1{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.third__section .banner__content .content__left h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.third__section .banner__content .content__left hr{
+    border: 2px solid #0D83F2;
+    width: 25%;
+    margin-top: 5px;
+}
+
+.third__section .banner__content .content__left h2{
+    text-transform: lowercase;
+    font-size: 14px;
+    margin-top: 20px;
+   
+}
+.third__section .banner__content .content__left p{
+    margin-top: 20px;
+    font-size: 12px;
+    text-transform: lowercase;
+}
+.third__section .banner__content .content__left .text__buttom{
+    margin-top: 20px;
+    font-size: 17px;
+    color: #0D83F2;
+}
+.third__section .banner__content .content__left .signature{
+    text-align: end;
+    font-family: 'Sigustil', sans-serif;
+    text-transform: capitalize;
+}
+.third__section .banner__content .content__right img{
+    position: relative;
+    width: 80vh;
+    height: 75vh;
+}
+.third__section .banner__content .content__right .rectangle{
+    right: 17%;
+    position: absolute;
+    width: 25%;
+    height: 75%;
+    background-color: #F5F5F5;
+}
+.third__section .banner__content .content__right h1{
+    position: absolute;
+    margin-left: 62%;
+    margin-top: -158px;
+    text-transform: uppercase;
+    transform:  scaleY(2) scaleX(2);
+    font-size: 100px;
+    font-family: 'Six Caps', sans-serif;
+    font-weight: 500;
+    left: 0;
+    color: #0D83F2;
+
+}
+.third__section .banner__content .content__right h2{
+    position:absolute;
+    font-family: 'Sigustil', sans-serif;
+    text-transform: capitalize;
+    font-size: 48px;
+    transform: scaleX(2) rotate(-40deg);
+    font-weight: 500;
+    margin-top: -120px;
+    left: 70%;
+
+}
+
+/* =======> fourth Section <======= */
+.fourth__banner{
+    background-color: #046DCF;
+    padding: 40px;
+}
+.fourth__banner .banner__content{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.fourth__banner .left__content{
+    flex: 1;
+    
+}
+.fourth__banner .left__content h1{
+    font-size: 42px;
+    text-transform: uppercase;
+    color: white;
+}
+.fourth__banner .left__content .text__transparent{
+    margin-top: -25px;
+    margin-left: -20px;
+    position: absolute;
+    font-size: 62px;
+    color: transparent;
+    -webkit-text-stroke: 0.2px white;
+}
+.fourth__banner .left__content .first__paragraph{
+    font-size: 24px;
+    color: white;
+    margin-top: 15px;
+}
+.fourth__banner .left__content .second__paragraph{
+    font-size: 22px;
+    color: #F6CE00;
+    margin-top: 15px;
+}
+.fourth__banner .left__content .third__paragraph{
+    margin-top: 15px;
+    font-size: 15px;
+    color: white;
+    line-height: 25px;
+}
+.fourth__banner .left__content h2{
+    margin-top: 15px;
+    font-size: 40px;
+    color: #F6CE00;
+}
+
+.fourth__banner .right__content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fourth__banner .right__content .right__content__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fourth__banner .right__content .circle{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 42vh;
+    height: 42vh;
+
+}
+.fourth__banner .right__content img{
+    position: relative;
+    width: 35%;
+    margin-top: -25px;
+}
+.fourth__banner .right__content button{
+    cursor: pointer;
+    background-color: #F6CF00;
+    color: white;
+    padding: 15px 35px;
+    width: 80%;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.fourth__banner .right__content p{
+    margin-top: 5px;
+    font-size: 9px;
+    color: white;
+}
+/* =======> Footer <======*/  
+footer{
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column; 
+    gap:30px;
+    justify-content: center;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    max-width: 740px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+footer div .logo{
+    align-items: center;
+}
+footer div .logo img{
+   width: 70%;
+}
+footer div p{
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+/* ===========> Media Query <=========== */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
